@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Apartment Price Prediction</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <div class="img">
+        <form class="form">
+            <h2>Area (Square Feet)</h2>
+            <input class="area" type="text" id="uiSqft" class="floatLabel" name="Squareft" value="1000">
+            <h2>Bedrooms</h2>
+            <div class="radio">
+                <input label="1" type="radio" id="radio-1" name="uiBHK" value="1">
+                <input label="2" type="radio" id="radio-2" name="uiBHK" value="2" checked>
+                <input label="3" type="radio" id="radio-3" name="uiBHK" value="3">
+                <input label="4" type="radio" id="radio-4" name="uiBHK" value="4">
+                <input label="5" type="radio" id="radio-5" name="uiBHK" value="5">
+                <input label="6" type="radio" id="radio-6" name="uiBHK" value="6">
+            </div>
+        
+    
+            <form class="form">
+                <h2>City</h2>                  
+                <div class="radio radio-city" id="uicity">
+                        <input label="Bangalore" type="radio" id="radio-1" name="uicity" value="Bangalore">
+                        <input label="Chennai" type="radio" id="radio-2" name="uicity" value="Chennai">
+                        <input label="Delhi" type="radio" id="radio-3" name="uicity" value="Delhi">
+                        <input label="Hyderabad" type="radio" id="radio-4" name="uicity" value="Hyderabad">
+                        <input label="Kolkata" type="radio" id="radio-5" name="uicity" value="Kolkata" checked>
+                        <input label="Mumbai" type="radio" id="radio-6" name="uicity" value="Mumbai">
+                    </div>
+                </form>
+
+            
+            <div>
+                <form class="form">
+                    <h2>Location</h2>
+                    <select class="location" name="" id="uiLocations">
+                    <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+                    </select>
+                </form>
+            </div>
+                <form class="form">
+                  <button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+                  <div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+                </form>
+        </form>
+    </div>
+</body>
+</html>
